@@ -95,14 +95,18 @@ header nav ul a {
 /* end nav */
 /* start about section */
 #about .img {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+#about .img img{
+    max-width: 100%;   
+}
+
 
 #about .container {
     display: flex;
