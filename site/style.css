@@ -5,18 +5,14 @@ body {
 /*------Projets------*/
 
 #Projet {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 /*Projet titre*/
 
 #Projet .projet-titre {
     width: 20%;
-}
-
-#Projet .projet-titre h2 {
-    font-size: 25px;
 }
 
 /*Carousel*/
@@ -29,10 +25,7 @@ body {
 
 #Projet .carousel li {
   list-style-type: none;
-  background-color: #ffffff;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
   flex: 0 0 350px;
 }
 
@@ -54,11 +47,10 @@ body {
 
 footer {
     background-color: #0d0d0d;
-    position: fixed;
+    width: 100%;
+    position: absolute;
     bottom: 0;
     left: 0;
-    right: 0;
-    width: 100%;
 }
 
 
@@ -67,8 +59,8 @@ footer {
 #Contact {
     display: flex;
     justify-content: space-between;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .footer-reseaux-sociaux {
@@ -77,20 +69,18 @@ footer {
 
 .footer-reseaux {
     display: flex;
-    justify-content: flex-end;
 }
 
 .footer-reseaux a {
-    margin: 15px; 
-    display: inline-block;
+    margin: 10px; 
+}
+
+.footer-reseaux a:hover {
+    opacity: 0.8;
 }
 
 .footer-reseaux img {
     width: 40px;
-}
-
-.footer-reseaux :hover {
-    opacity: 0.8;
 }
 
 .footer-reseaux p {
