@@ -156,3 +156,84 @@ header nav ul a {
 }
 
 /* end about section */
+
+/*Carousel : Projets */
+
+.carousel {
+  width: 80%;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory; 
+}
+
+.carousel li {
+  list-style-type: none;
+  background-color: #ffffff;
+  padding: 20px;
+  flex: 0 0 400px;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.carousel li img {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+}
+
+
+/*Paramètre de la balise Footer*/
+
+footer {
+    background-color: #0d0d0d;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+#footer-reseaux-sociaux {
+    color: white;
+}
+
+/*Paramètre du Contact*/
+
+#Contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/*Modification des logos*/
+
+.footer-reseaux {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-reseaux a {
+    margin: 15px; 
+    display: inline-block;
+}
+
+.footer-reseaux img {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-reseaux :hover {
+    opacity: 0.8;
+}
+
+.footer-reseaux p {
+    color: white;
+    font-size: 18px;  
+}
+
+/*SVG pour les icons !*/
