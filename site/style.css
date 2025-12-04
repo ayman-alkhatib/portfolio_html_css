@@ -2,36 +2,55 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*Carousel : Projets */
+/*------Projets------*/
 
-.carousel {
-  width: 80%;
+#Projet {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*Projet titre*/
+
+#Projet .projet-titre {
+    width: 20%;
+}
+
+#Projet .projet-titre h2 {
+    font-size: 25px;
+}
+
+/*Carousel*/
+
+#Projet .carousel {
   padding: 20px;
   display: flex;
   gap: 20px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory; 
 }
 
-.carousel li {
+#Projet .carousel li {
   list-style-type: none;
   background-color: #ffffff;
   padding: 20px;
-  flex: 0 0 400px;
-  scroll-snap-align: start;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  flex: 0 0 350px;
 }
 
-.carousel li img {
+#Projet .carousel li img {
   width: 100%;
   height: 200px;
   border-radius: 8px;
+}   
+
+#Projet .carousel h2 {
+    font-size: 20px;
 }
 
+#Projet .carousel p {
+    font-size: 15px;
+}
 
-/*Paramètre de la balise Footer*/
+/*------Footer------*/
 
 footer {
     background-color: #0d0d0d;
@@ -42,20 +61,19 @@ footer {
     width: 100%;
 }
 
-#footer-reseaux-sociaux {
-    color: white;
-}
 
 /*Paramètre du Contact*/
 
 #Contact {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-/*Modification des logos*/
+.footer-reseaux-sociaux {
+    color: white;
+}
 
 .footer-reseaux {
     display: flex;
@@ -68,8 +86,7 @@ footer {
 }
 
 .footer-reseaux img {
-    width: 20px;
-    height: 20px;
+    width: 40px;
 }
 
 .footer-reseaux :hover {
