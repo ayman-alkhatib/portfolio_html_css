@@ -59,6 +59,10 @@ header nav .container {
     align-items: center;
 }
 
+header nav .container .menu-bar .menu-icon {
+    display: none;
+}
+
 header nav .container ul {
     display: flex;
     justify-content: flex-end;
@@ -353,11 +357,16 @@ header nav ul a {
 /* start nav bar */
 @media (max-width: 768px) {
     header nav .container {
-      position: relative;
+        position: relative;
     }
+
     header nav .container .menu-bar {
         cursor: pointer;
         padding: 20px;
+    }
+
+    header nav .container .menu-bar .menu-icon {
+        display: block;
     }
 
     header nav .container ul {
