@@ -17,30 +17,43 @@ body {
 
 /*Carousel*/
 
-#Projet .carousel {
+#Projet .liste-projet {
   padding: 20px;
   display: flex;
   gap: 20px;
 }
 
-#Projet .carousel li {
+#Projet .liste-projet li {
   list-style-type: none;
   padding: 20px;
   flex: 0 0 350px;
 }
 
-#Projet .carousel li img {
+#Projet .liste-projet li .image-projet {
   width: 100%;
   height: 200px;
   border-radius: 8px;
 }   
 
-#Projet .carousel h2 {
+#Projet .liste-projet h2 {
     font-size: 20px;
 }
 
-#Projet .carousel p {
+#Projet .liste-projet p {
     font-size: 15px;
+}
+
+#Projet .liste-projet .box-nom-projet {
+    display: flex;
+}
+
+#Projet .liste-projet .box-nom-projet .box-image-liens-projet {
+    width: 40px;
+}
+
+#Projet .liste-projet .box-nom-projet a {
+    margin: 2%;
+    display: flex;
 }
 
 /*------Footer------*/
@@ -48,11 +61,10 @@ body {
 footer {
     background-color: #0d0d0d;
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
 }
-
 
 /*Paramètre du Contact*/
 
