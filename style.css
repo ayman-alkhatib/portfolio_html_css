@@ -415,6 +415,12 @@ header nav ul a {
         font-size: 25px;
 
     }
+    #about .cta-btn  {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 140px;
+}
 }
 
 /* end about */
@@ -447,7 +453,7 @@ header nav ul a {
     #service .services-list .text {
         font-size: 22px;
     }
-
+   
     #service .services-list .text span {
         font-size: 18px;
         font-weight: 400;
@@ -457,6 +463,11 @@ header nav ul a {
     #service .text-box {
         align-items: center ;
         padding: 0 30px;
+    }
+
+     #service .text-box h1{
+        text-wrap: wrap;
+        text-align: center;
     }
 
     #service .text-box>span {
