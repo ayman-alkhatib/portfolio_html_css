@@ -10,6 +10,7 @@ html {
 
 body {
     font-family: "Work Sans", sans-serif;
+    margin: 0;
 }
 
 section {
@@ -354,6 +355,116 @@ header nav ul a {
 
 /* end education section */
 
+/*Projet titre*/
+
+#Projet .projet-titre {
+    text-align: center;
+}
+
+
+/*Carousel*/
+
+#Projet .liste-projet {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#Projet .liste-projet li {
+    list-style-type: none;
+    padding: 20px;
+    flex: 0 0 320px;
+}
+
+#Projet .liste-projet li .image-projet {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+}
+
+#Projet .liste-projet h2 {
+    font-size: 20px;
+}
+
+#Projet .liste-projet p {
+    font-size: 15px;
+}
+
+#Projet .liste-projet .box-nom-projet {
+    display: flex;
+    justify-content: space-between;
+}
+
+#Projet .liste-projet .box-nom-projet .box-image-réseaux {
+
+    display: flex;
+}
+
+#Projet .liste-projet .box-nom-projet .box-image-réseaux img:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+#Projet .liste-projet .box-nom-projet .box-image-liens-projet {
+    width: 40px;
+}
+
+#Projet .liste-projet .box-nom-projet a {
+    margin: 2%;
+    display: flex;
+}
+
+/*------Footer------*/
+
+footer {
+    background-color: #0d0d0d;
+    width: 100%;
+}
+
+/*Paramètre du Contact*/
+
+#Contact {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-reseaux-sociaux {
+    color: white;
+}
+
+.footer-reseaux {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 10px;
+}
+
+.footer-reseaux a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-reseaux img:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+.footer-reseaux img {
+    width: 30px;
+    margin-right: 5px;
+}
+
+.footer-reseaux p {
+    color: white;
+    font-size: 18px;
+}
+
+
 /* start responsive */
 /* start nav bar */
 @media (max-width: 768px) {
@@ -373,6 +484,32 @@ header nav ul a {
 
     header nav .container ul {
         display: block;
+        gap: 10px;
+        position: absolute;
+        right: 40px;
+        top: 30px;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        padding: 0;
+        width: 150px;
+        overflow: hidden;
+        display: none;
+    }
+
+    /* end nav */
+    /* start about section */
+    #about .img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #about .img img {
+        max-width: 100%;
         gap: 10px;
         position: absolute;
         right: 40px;
@@ -415,12 +552,13 @@ header nav ul a {
         font-size: 25px;
 
     }
-    #about .cta-btn  {
+
+    #about .cta-btn {
         display: flex;
         flex-direction: column;
         gap: 20px;
         width: 140px;
-}
+    }
 }
 
 /* end about */
@@ -450,10 +588,11 @@ header nav ul a {
         border-radius: 50%;
         padding: 20px;
     }
+
     #service .services-list .text {
         font-size: 22px;
     }
-   
+
     #service .services-list .text span {
         font-size: 18px;
         font-weight: 400;
@@ -461,11 +600,11 @@ header nav ul a {
     }
 
     #service .text-box {
-        align-items: center ;
+        align-items: center;
         padding: 0 30px;
     }
 
-     #service .text-box h1{
+    #service .text-box h1 {
         text-wrap: wrap;
         text-align: center;
     }
@@ -478,15 +617,29 @@ header nav ul a {
         text-align: center;
     }
 }
+
 /* end service section */
 /* start education section */
 @media (max-width: 768px) {
-   
+
     #education .education-list .date .date-content {
         margin-right: 40px;
-        
-    }       
+
+    }
 }
+
 /* end education section */
+
+
+/* footer */
+@media (max-width: 768px) {
+    #Contact {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
 
 /* end responsive */
