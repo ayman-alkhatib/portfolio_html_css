@@ -1,18 +1,30 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Work Sans", sans-serif;
 }
 
+/*------Container------*/
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
 /*------Projets------*/
-
-#Projet {
-    padding-left: 30px;
-    padding-right: 30px;
-}
 
 /*Projet titre*/
 
 #Projet .projet-titre {
     width: 20%;
+}
+
+#Projet .projet-titre h2 {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+#Projet .projet-titre h2:hover {
+    text-decoration: none;
 }
 
 /*Carousel*/
@@ -45,6 +57,16 @@ body {
 
 #Projet .liste-projet .box-nom-projet {
     display: flex;
+    justify-content: space-between;
+}
+
+#Projet .liste-projet .box-nom-projet .box-image-réseaux {
+    display: flex;
+}
+
+#Projet .liste-projet .box-nom-projet .box-image-réseaux img:hover {
+    opacity: 0.8;
+    transform: scale(1.1); 
 }
 
 #Projet .liste-projet .box-nom-projet .box-image-liens-projet {
@@ -71,8 +93,6 @@ footer {
 #Contact {
     display: flex;
     justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
 }
 
 .footer-reseaux-sociaux {
@@ -87,8 +107,9 @@ footer {
     margin: 10px; 
 }
 
-.footer-reseaux a:hover {
+.footer-reseaux img:hover {
     opacity: 0.8;
+    transform: scale(1.1); 
 }
 
 .footer-reseaux img {
@@ -99,5 +120,3 @@ footer {
     color: white;
     font-size: 18px;  
 }
-
-/*SVG pour les icons !*/
