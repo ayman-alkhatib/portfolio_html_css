@@ -110,13 +110,14 @@ header nav ul a {
 /* end nav */
 /* start about section */
 #about .img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 #about .img img {
@@ -354,7 +355,7 @@ header nav ul a {
     font-size: 12px;
     color: #555;
     line-height: 1.6;
-    margin-top: -3px;
+    margin-top: 2px;
 }
 
 /* end education section */
@@ -384,40 +385,51 @@ header nav ul a {
 
 #Projet .liste-projet li .image-projet {
     width: 100%;
-    height: 200px;
     border-radius: 8px;
 }
 
 #Projet .liste-projet h2 {
     font-size: 20px;
+    margin-bottom: 5px;
 }
 
 #Projet .liste-projet p {
-    font-size: 15px;
+    font-size: 14px;
+    color: #555;
 }
 
 #Projet .liste-projet .box-nom-projet {
     display: flex;
     justify-content: space-between;
 }
-
-#Projet .liste-projet .box-nom-projet .box-image-réseaux {
-
+#Projet .liste-projet li{
     display: flex;
+    flex-direction: column;
 }
 
-#Projet .liste-projet .box-nom-projet .box-image-réseaux img:hover {
+#Projet .liste-projet .box-image-réseaux {
+    display: flex;
+    gap: 15px;
+    margin-top: auto;
+}
+
+
+#Projet .liste-projet .box-image-réseaux a:hover {
     opacity: 0.8;
-    transform: scale(1.1);
+    text-decoration: underline;
 }
 
-#Projet .liste-projet .box-nom-projet .box-image-liens-projet {
-    width: 40px;
+#Projet .liste-projet  .box-image-liens-projet {
+    width: 30px;
+    margin-left: -5px;
 }
 
-#Projet .liste-projet .box-nom-projet a {
-    margin: 2%;
+#Projet .liste-projet .box-image-réseaux a {
     display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: black;
 }
 
 /*------Footer------*/
