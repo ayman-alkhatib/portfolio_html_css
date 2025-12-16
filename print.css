@@ -1,0 +1,30 @@
+section {
+    padding: 0 ;
+    page-break-inside: avoid;
+}
+
+#about .cta-btn {
+    display: none;
+}
+
+nav .menu-bar {
+    display: none;
+}
+
+#service .services-list .icon {
+    display: none;
+}
+
+#Projet .liste-projet .box-image-réseaux {
+    display: none;
+}
+
+footer  {
+    display: none;
+}
+
+#Projet .liste-projet li {
+    list-style-type: none;
+    padding: 20px;
+    flex: 0 0 300px;
+}
