@@ -17,7 +17,7 @@ This repository contains a simple personal portfolio website built with vanilla 
 ## Getting Started
 
 1. Clone the repository:
-   git clone https://github.com/USERNAME/REPO-NAME.git
+   git clone https://github.com/ayman-alkhatib/portfolio_html_css.git
 
 3. Open `index.html` directly in a browser  
 or use a simple local server (for example with VS Code Live Server).
